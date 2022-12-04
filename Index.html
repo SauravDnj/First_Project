@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Fitness</title>
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <style>
+        html{
+            background: url('img/bg.jfif') no-repeat center center/cover;
+            opacity: 0.9;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            height: 465px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .left {
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 70px;
+        }
+
+        .left div {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            font-size: 20px;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .rigth {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 20px;
+        }
+
+        .navbar li a:hover {
+            color: black;
+            background-color: white;
+            border: 2px solid #2a97ff;
+            border-radius: 10px;
+        }
+
+        .btn {
+            margin: 10px 5px;
+            padding: 5px 15px;
+            color: white;
+            background-color: lightskyblue;
+            border: 2px solid #2a97ff;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #btns{  
+            color: white;
+            background-color: lightskyblue;
+            border: 2px solid #2a97ff;
+            border-radius: 10px;
+            font-size: 25px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-family: 'Times New Roman', Times, serif;
+            width: 20%;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: pink;
+        }
+
+        #btns:hover{
+            color: white;
+            background-color: black;
+        }
+
+        .container {
+            color: black;
+            background-color: white ;
+            border: 2px solid black;
+            margin: 80px 30%;
+            padding: 10px 40px;
+            width: 40%;;
+            border-radius: 20px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 34px;
+        }
+
+        .container button {
+            display: block;
+            width: 515px;
+            margin: 25px auto;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        .form-group input {
+            color: black;
+            background-color: pink;
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 5px;
+            border: 2px solid black;
+            margin: 10px auto;
+            font-size: 20px;
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .form-group input:hover{
+            color: white;
+            background-color: lightskyblue;
+            border: 2px solid #2a97ff;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left Box For Logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Fitness</div>
+        </div>
+
+        <!-- Mid Box For Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About Us</a></li>
+                <li><a href="#" target="_blank">Fitness Calculator</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Rigth Box For Button -->
+        <div class="rigth">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join The Best GYM of Surat Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="age" id="age" placeholder="Enter Your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="gender" id="gender" placeholder="Enter Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="number" id="number" placeholder="Enter Your Phone Number">
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email ID">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="loc" id="loc" placeholder="Enter Your Locality">
+            </div>
+            <button type="submit" id="btns">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
